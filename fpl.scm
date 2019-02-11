@@ -15,3 +15,10 @@
 	
     (else(+ (car L) (sum (cdr L)))
   )
+  )
+  )
+
+;#3
+(define (sumList L)
+  (cond ((null? L) 0)
+         ((not (pair? L))
