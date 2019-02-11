@@ -25,3 +25,14 @@
          (if (number? L) L 0))
          (else (+ (sumList (car L))
                   (sumList (cdr L))))))
+
+;#4
+(define (max list)
+
+         (cond
+
+                        ((null? list) ‘())
+
+                        ((null? (cdr list)) (car list))
+
+                        ((> (car list) (max (cdr list))) (car list))
