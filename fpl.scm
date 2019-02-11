@@ -36,3 +36,9 @@
                         ((null? (cdr list)) (car list))
 
                         ((> (car list) (max (cdr list))) (car list))
+	  
+	  		(else (max (cdr list)))
+
+         )
+
+      )    
