@@ -22,3 +22,6 @@
 (define (sumList L)
   (cond ((null? L) 0)
          ((not (pair? L))
+         (if (number? L) L 0))
+         (else (+ (sumList (car L))
+                  (sumList (cdr L))))))
