@@ -42,3 +42,13 @@
          )
 
       )    
+
+(define (min list)
+
+         (cond
+
+                        ((null? list) ‘())
+
+                        ((null? (cdr list)) (car list))
+
+                        ((< (car list) (min (cdr list))) (car list))
